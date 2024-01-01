@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Global  */
+img {
+  width: 100%;
+}
+h1 {
+  font-family: "Alegreya";
+  font-size: 78px;
+}
+li {
+  list-style: none;
+  color: #686868;
+  margin: 15px 0;
+}
+h2 {
+  margin: 20px 0;
+  font-family: "Alegreya";
+}
+p {
+  color: #686868;
+  margin: 30px 0;
+}
+.container {
+  margin: 0px auto;
+  width: 70%;
+}
+.settings {
+  background-color: white;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 -1px 17px 1px rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+.settings ul {
+  padding: 0 10px;
+  margin: 0;
+}
+.settings li{
+  transition: all 0.4s;
+}
+.settings .shop:hover ,.settings .ters:hover {
+  color: #218FE6;
+}
+
+:root {
+  --main-color: #a37c47;
+  --second-color:#8E7754;
+  ;
+}
+/* START Nav SECTION */
+
+.nav {
+  /* background-color: white; */
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.nav .logo {
+  width: 15%;
+  float: left;
+}
+.nav ul {
+  padding: 0;
+  float: right;
+  width: 50%;
+}
+.nav li {
+  margin: 10px 5px;
+  float: left;
+  text-align: right;
+  width: 15%;
+}
+.clear {
+  clear: both;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+/* END Nav SECTION */
+/* ****************************** */
+
+/* START WELCOME SECTION */
+.welcome {
+  color: white;
+  background-image: url(../Img/welcome.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.welcome .background {
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-top: 100px;
+  height: 100%;
+}
+.welcome .ct {
+  padding: 60px 0;
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+}
+.welcome p {
+  color: white;
+}
+.welcome .ct .desc {
+  width: 30%;
+  margin: 0 10px;
+}
+.welcome button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.welcome button:hover {
+  color: black;
+  background-color: white;
+}
+.welcome .LM {
+  background-color: var(--main-color);
+  border: 1px solid transparent;
+}
+@media screen and (max-width: 1000px) {
+  .welcome .ct {
+    width: 100%;
+    padding: 30px;
+  }
+  .meal,
+  .about .desc,
+  .about .img,
+  .about2 .desc,
+  .about2 .img,
+  .contact .desc,
+  .contact .img {
+    width: 100%;
+  }
+  .summery .col {
+    width: 75%;
+    margin: 20px auto;
+  }
+}
+
+/* END  WELCOME SECTION */
+/* ********************************* */
+
+/* Start About section  */
+.about {
+  padding: 40px;
+}
+.img {
+  float: left;
+  width: 40%;
+}
+.about .desc {
+  font-family: "Alegreya Sans", sans-serif;
+  width: 40%;
+  float: right;
+}
+.about ul{
+  padding: 0;
+}
+.about i{
+  color: var(--second-color);
+  width: 2em;
+  height: 2em;
+  padding: 7px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+/* End Abour Section  */
+/* ********************************* */
+
+/* Start About 2 section  */
+.about2 {
+  background-color: #f8f8f8;
+  padding: 40px;
+}
+.about2 .img {
+  width: 40%;
+  float: right;
+}
+.about2 .desc {
+  float: left;
+  font-family: "Alegreya Sans", sans-serif;
+  width: 40%;
+}
+/* End About 2 Section  */
+/* -********************************* */
+
+/* Start  Meals section  */
+.meals {
+  text-align: center;
+}
+.meals .head {
+  padding: 10px 0;
+}
+.meal {
+  float: left;
+  width: calc(100% / 3);
+  padding: 20px;
+}
+/* End Meals  Section  */
+/* -********************************* */
+
+/* start Contact Section  */
+.contact {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+.contact .desc {
+  width: 40%;
+  float: left;
+}
+.contact .img {
+  width: 40%;
+  float: right;
+}
+.contact i{
+  color: white;
+ background-color:  var(--second-color);
+  width: 2em;
+  height: 2em;
+  padding: 7px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.contact ul{
+  padding: 0;
+}
+/* End Contact Section  */
+/* -********************************* */
+
+/* start summery style */
+.summery {
+  padding: 40px 0;
+  background-color: #403d38;
+}
+.summery h4 {
+  margin-bottom: 20px;
+  color: white;
+}
+.summery p {
+  color: #969696;
+  font-size: 16px;
+}
+.summery .col {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.col ul {
+  padding: 0;
+  margin: 0;
+}
+.col li {
+  font-size: 16px;
+  color: #969696;
+  margin: 5px 0;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.col .last {
+  border: 0px;
+}
+/* End  summery style */
+/* -********************************* */
+
+/* <!-- Start Footer Section  --> */
+
+.footer {
+  background-color: #353330;
+}
+.footer .content {
+  padding-top: 20px;
+  width: 20%;
+  margin: auto;
+  text-align: center;
+}
+.footer li {
+  display: inline-block;
+}
+.footer p {
+  font-size: 13px;
+  margin: 20px;
+}
+.footer li {
+  text-align: center;
+  background-color: #484540;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin: 20px 0;
+
+  padding: 6px;
+transition: all 0.5s;
+}
+.footer .face:hover{
+  background-color:#3B5998 ;
+  color: white;
+}
+.footer .mail:hover{
+  background-color:#DD4B39 ;
+  color: white;
+}
+.footer .twitter:hover{
+  background-color:#007BB5 ;
+  color: white;
+}
+.footer .link:hover{
+  background-color:#007BB5 ;
+  color: white;
+}
+/* <!-- End Footer Section  --> */
+@media screen and (max-width: 1000px) {
+  .welcome .ct {
+    width: 100%;
+    padding: 30px;
+  }
+  .meal,
+  .about .desc,
+  .about .img,
+  .about2 .desc,
+  .about2 .img,
+  .contact .desc,
+  .contact .img {
+    width: 100%;
+  }
+  .summery .col {
+    width: 75%;
+    margin: 20px auto;
+  }
+}
