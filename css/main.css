@@ -226,10 +226,9 @@ padding: var(--sections-padding);
   text-align: center;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: 50%;
-  padding: 0px;
+  padding-top: 5px;
   margin: 0 10px;
-  position: relative;
-  top: 5px;
+  
 }
 
 /* End Abour Section  */
@@ -311,7 +310,7 @@ iframe{
   height: 2em;
   padding: 7px;
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.35);
   border-radius: 50%;
   margin: 0 10px;
 }
@@ -350,9 +349,14 @@ margin: 10px ;}
   margin: 5px 0;
   padding: 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s;
 }
 .col .last {
   border: 0px;
+}
+.col li:hover{
+  color: white;
+  margin-left: 10px;
 }
 /* End  summery style */
 /* -********************************* */
